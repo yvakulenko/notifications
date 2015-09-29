@@ -10,11 +10,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = User.COLLECTION_NAME)
 @TypeAlias("user")
-
-public class User {
+public class User extends AbstractDocument{
 	public static final String COLLECTION_NAME = "user";
 
-	@Id private String id;
 	private String firstName;
 	private String lastName;
 	
@@ -27,13 +25,6 @@ public class User {
 		
 	}
 	
-	public String getId() {
-		return id;
-	}
-	
-	public void setId(String id) {
-		this.id = id;
-	}
 	public String getFirstName() {
 		return firstName;
 	}
@@ -58,17 +49,18 @@ public class User {
 	public void setNotifications(Set<Notification> notifications) {
 		this.notifications = notifications;
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result
 				+ ((firstName == null) ? 0 : firstName.hashCode());
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result
 				+ ((lastName == null) ? 0 : lastName.hashCode());
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -83,11 +75,6 @@ public class User {
 				return false;
 		} else if (!firstName.equals(other.firstName))
 			return false;
-		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
-			return false;
 		if (lastName == null) {
 			if (other.lastName != null)
 				return false;
@@ -95,5 +82,12 @@ public class User {
 			return false;
 		return true;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "User [firstName=" + firstName + ", lastName=" + lastName
+				+ ", friends=" + friends + ", notifications=" + notifications
+				+ "]";
+	}
+		
 }

@@ -1,0 +1,16 @@
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/NotificationsApplication.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/repository/SequenceRepository.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/repository/UserRepository.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/domain/Friend.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/service/UserService.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/util/EmailSender.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/domain/User.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/domain/AbstractDocument.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/domain/Sequence.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/repository/FriendRepository.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/service/FriendService.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/controller/UserController.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/service/NotificationService.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/repository/NotificationRepository.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/domain/Notification.java
+/Users/yana/2015_projects/notifications/src/main/java/ua/vakulenko/notification/exception/SequenceException.java
