@@ -22,6 +22,10 @@ public class NotificationService {
 
 	}
 
+	public Notification find(Long id) {
+		return contactRepository.findOne(id);
+	}
+
 	public void update(Notification contact) {
 		contactRepository.save(contact);
 	}
